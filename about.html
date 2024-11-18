@@ -243,6 +243,42 @@
             color: rgb(252, 254, 255);
         }
 
+        @media (min-width: 768px) {
+            .img_about_content {
+                flex-direction: row;
+            }
+
+            .details {
+                order: -1; /* Place above the paragraph */
+                width: 45%;
+                margin-right: 50px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+.details {
+        width: 70%; /* Adjust width for medium screens */
+        margin-left: auto; /* Center on smaller screens */
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .details {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .details {
+        width: 100%; /* Full width for very small screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}        
+
 
 
 
