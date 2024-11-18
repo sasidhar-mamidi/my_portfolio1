@@ -164,6 +164,12 @@
          transform: translateX(-50%); /* Center the underline */
          transition: height 0.3s ease; /* Smooth transition for height */
   }
+        @media (max-width: 768px) {
+    .img_about span::after {
+        width: 30%; /* Adjust width for smaller screens */
+        height: 3px; /* Thinner line for smaller screens */
+    }
+}
 
 
 
